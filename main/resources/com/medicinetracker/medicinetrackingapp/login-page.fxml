@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="212.0" prefWidth="433.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.medicinetracker.medicinetrackingapp.LoginPageController">
+   <children>
+      <AnchorPane prefHeight="182.0" prefWidth="515.0">
+         <children>
+            <GridPane layoutX="30.0" layoutY="14.0" prefHeight="191.0" prefWidth="370.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="37.599981689453124" minHeight="10.0" prefHeight="36.799993896484374" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="49.60001831054687" minHeight="10.0" prefHeight="38.40000610351562" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="44.79999389648438" minHeight="10.0" prefHeight="30.400006103515636" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="24.79999389648438" minHeight="10.0" prefHeight="16.00000610351563" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="usernameField" promptText="Email" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </TextField>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Log In To Your Account">
+                           <font>
+                              <Font name="Verdana Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="3">
+                     <children>
+                        <Button fx:id="loginButton" mnemonicParsing="false" onAction="#onLoginButtonPressed" prefHeight="26.0" prefWidth="254.0" style="-fx-background-color: lightblue;" text="Log In" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="5">
+                     <children>
+                        <Label fx:id="errorLabel" prefHeight="18.0" prefWidth="175.0" textFill="RED" />
+                     </children>
+                  </StackPane>
+                  <PasswordField fx:id="passwordField" promptText="Password" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
